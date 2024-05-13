@@ -3,7 +3,7 @@ import { query } from "express"
 
 const client= new CosmosClient({
     endpoint:"https://cosmosrgeastus64966d23-24a4-4d79-9004db.documents.azure.com:443/",
-    key:"***"
+    key:"tiAq5XCQJbNc4sqM5IngstEbckHYAe0eKXtSxh4eKml9N1tpzNEJDbrw1YG84VdZcuWk1Zd6jVyVACDbE9hEGg=="
 })
 export const {database} = await client.databases.createIfNotExists({id:'mydb'})
 export const {container}= await database.containers.createIfNotExists({id:"user"})
